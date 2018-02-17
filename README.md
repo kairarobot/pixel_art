@@ -13,3 +13,5 @@ A front-end application for drawing pixel art.
 * Undo
 * Redo
 * Save
+
+![prev](https://github.com/kairaygun/pixel_art/blob/master/images/preview.png)
