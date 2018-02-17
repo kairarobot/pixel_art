@@ -1,0 +1,113 @@
+body {
+    background: url(images/background.png) repeat-x center center fixed;
+}
+
+@font-face {
+    font-family: Lazer84;
+    src: url(font/Lazer84.ttf);
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 10px;
+}
+
+td {
+    background-color: #FFF;
+    width: 10px;
+}
+
+#title {
+    display: block;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.sideMenu {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.navigation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 100px;
+    -webkit-flex-flow: row wrap;
+}
+.navigationItems {
+    background-color: darkgray;
+    cursor: pointer;
+    font-size: 12px;
+    height: 50px;
+    padding: 5px;
+    width: 50px;
+}
+.navigation input {
+    height: 70px;
+    margin-bottom: 10px;
+    width: 70px;
+}
+
+.pixelArt {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.6); 
+    display: none; 
+    height: 100%; 
+    padding-top: 150px; 
+    position: fixed; 
+    left: 0;
+    overflow: auto;
+    top: 0;
+    width: 100%; 
+    z-index: 1;
+}
+
+.modalContent {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.modalContent h1 {
+    color: #12c8cb;
+    font-family: Lazer84;
+    font-size: 30px;
+    text-shadow: #3b2687 2px 2px;
+    margin-bottom: 20px;
+}
+
+.canvasSelect {
+    color: #3b2687;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    overflow-y: auto;  
+    padding: 15px;
+}
+
+.canvasSelect option:hover {
+    background-color: #12c8cb;
+}

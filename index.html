@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/title.png">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <img id="title" src="images/title.png">
+
+    <!-- side bar menu -->
+    <aside class="sideMenu">
+        <nav class="navigation">
+            <input id="colorPicker" type="color">
+            <button class="navigationItems" id="undo"><img src="images/undo.png"></button>
+            <button class="navigationItems" id="redo"><img src="images/redo.png"></button>
+            <button class="navigationItems" id="draw"><img src="images/draw.png"></button>
+            <button class="navigationItems" id="fill"><img src="images/fill.png"></button>
+            <button class="navigationItems" id="erase"><img src="images/erase.png"></button>
+            <button class="navigationItems" id="save"><img src="images/save.png"></button>
+        </nav>
+    </aside>
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="modalContent">
+            <h1>SELECT  &nbsp; CANVAS &nbsp;  SIZE</h1>
+            <select size=3 id="size" class="canvasSelect">
+                <option value="smallCanvas">Small</option>
+                <option value="mediumCanvas">Medium</option>
+                <option value="largeCanvas">Large</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- draw pixel canvas -->
+    <div class="pixelArt">
+        <table id="pixelCanvas"></table>
+    </div>
+</body>
+
+<!-- pixel art script -->
+<script src="html2canvas.js"></script>
+<script src="designs.js"></script>
+
+</html>
