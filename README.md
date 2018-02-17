@@ -1,16 +1,15 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+### HTML5, CSS3, JavaScript, jQuery
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/mit-license-brightgreen.svg" alt="mit license"></a>
 
-## Instructions
+A front-end application for drawing pixel art.
 
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+#### Functions
+* Draw
+* Fill
+* Erase
+* Undo
+* Redo
+* Save
