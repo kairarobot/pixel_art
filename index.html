@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/title.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,13 +16,25 @@
     <!-- side bar menu -->
     <aside class="sideMenu">
         <nav class="navigation">
-            <input id="colorPicker" type="color">
-            <button class="navigationItems" id="undo"><img src="images/undo.png"></button>
-            <button class="navigationItems" id="redo"><img src="images/redo.png"></button>
-            <button class="navigationItems" id="draw"><img src="images/draw.png"></button>
-            <button class="navigationItems" id="fill"><img src="images/fill.png"></button>
-            <button class="navigationItems" id="erase"><img src="images/erase.png"></button>
-            <button class="navigationItems" id="save"><img src="images/save.png"></button>
+            <input  id="colorPicker" type="color" title="Pick Color">
+            <button id="undo"  class="navigationItems" alt="undo button"  title="Undo Action">
+                <img src="images/undo.png">
+            </button>
+            <button id="redo"  class="navigationItems" alt="redo button"  title="Redo Action">
+                <img src="images/redo.png">
+            </button>
+            <button id="draw"  class="navigationItems" alt="draw button"  title="Draw Pixels">
+                <img src="images/draw.png">
+            </button>
+            <button id="fill"  class="navigationItems" alt="fill button"  title="Fill Pixels">
+                <img src="images/fill.png">
+            </button>
+            <button id="erase" class="navigationItems" alt="erase button" title="Erase Pixels">
+                <img src="images/erase.png">
+            </button>
+            <button id="save"  class="navigationItems" alt="save button"  title="Save Canvas">
+                <img src="images/save.png">
+            </button>
         </nav>
     </aside>
 
@@ -31,7 +42,7 @@
     <div class="modal">
         <div class="modalContent">
             <h1>SELECT  &nbsp; CANVAS &nbsp;  SIZE</h1>
-            <select size=3 id="size" class="canvasSelect">
+            <select id="size" class="canvasSelect" size=3 >
                 <option value="smallCanvas">Small</option>
                 <option value="mediumCanvas">Medium</option>
                 <option value="largeCanvas">Large</option>
@@ -46,6 +57,7 @@
 </body>
 
 <!-- pixel art script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="html2canvas.js"></script>
 <script src="designs.js"></script>
 

@@ -58,12 +58,28 @@ td {
     font-size: 12px;
     height: 50px;
     padding: 5px;
+    position: relative;
     width: 50px;
 }
+.navigationItems:hover {
+    background-color: white;
+}
 .navigation input {
+    cursor: pointer;
     height: 70px;
     margin-bottom: 10px;
     width: 70px;
+}
+.navigationToolTip {
+    color: black;
+    background-color: pink;
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+}
+.navigationToolTip:hover {
+    visibility: visible;
+    z-index: 3;
 }
 
 .pixelArt {
